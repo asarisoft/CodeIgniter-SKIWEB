@@ -3,10 +3,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sugawara Kadii Indonesia</title>
-    <link rel="shortcut icon" type="image/x-icon"  />
+    <link rel="shortcut icon" type="image/x-icon" href = "<?php echo base_url('assets/img/icon.ico') ?>"  />
     <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('assets/bootstrap-4.0/css/bootstrap.min.css') ?>">
     <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('assets/font-awesome/css/font-awesome.min.css') ?>">
     <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('assets/css/front.css') ?>">
+
+    <!-- Gallery FancyBox -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/source/jquery.fancybox.css?v=2.1.5')?>" media="screen" />
+
 </head>
 <body>
 <div class="page-header">
@@ -51,7 +55,7 @@
 	        <a class="nav-link" href="<?php echo site_url('home/business')?>">BUSINESS<span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item <?php if ($active_menu == 'gallery') { echo 'active'; }?>">
-	        <a class="nav-link" href="#">GALLERY<span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="<?php echo site_url('home/gallery')?>">GALLERY<span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item <?php if ($active_menu == 'contact') { echo 'active'; }?>">
 	        <a class="nav-link" href="<?php echo site_url('home/contact')?>">CONTACT<span class="sr-only">(current)</span></a>
