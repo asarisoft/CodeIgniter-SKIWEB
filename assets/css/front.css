@@ -476,7 +476,7 @@ h4.greenh4 {
     }
 
     .rec-right {
-        margin-top: 40px;
+        margin-top: 0px;
     }
 
     .ver_green_rec_first {
@@ -701,6 +701,7 @@ h4.greenh4 {
         width: 10%;
     }
     .contact-left {
+        padding: 0 4px;
         width: 88%;
         margin-bottom: 20px;
     }
