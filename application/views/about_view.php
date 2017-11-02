@@ -3,7 +3,7 @@
 <div class="container container-about2">
 	<h3 class="about-us-text"> ABOUT <span >US</span></h3>
 	<img class="ver_green" src="<?php echo base_url('assets/img/ver-green.png')?>">
-	<div class="row container-text">
+	<div class="row container-text container-text-about">
 		<div class="col-md-6 left ct-about" >
 			<p>PT. Sugawara Kadii Indonesia is a Joint Venture company between PT. Kadi Internationl adn Sugawar Industry Co., Ltd. We are established in Indonesia to developing new technology, especially for road construction work, namely Recycling Asphalt. Recycling Asphalt technology has been applied for a long time by Sugawara Industry Co., Ltd in Japan</p>
 			
@@ -16,4 +16,9 @@
 
 		</div>
 	</div>
+	<img class="bottom-image" src="<?php echo base_url('assets/img/bottom-right.png')?>">
+	<?php include "footer_text.php" ?>
+
 </div>
+
+

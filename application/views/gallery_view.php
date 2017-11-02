@@ -47,9 +47,8 @@
  			</p>
 		</div>
 	</div>
-
-
-
-
 	</div>
+
+	<img class="bottom-image" src="<?php echo base_url('assets/img/bottom-right.png')?>">
+	<?php include "footer_text.php" ?>
 </div>

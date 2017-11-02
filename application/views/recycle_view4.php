@@ -3,11 +3,11 @@
 </div>
 
 <div class="container container-about2">
-	<h3 class="title-bottom"> RECYCLE </h3>
 	<img class="ver_green ver_green_rec_first" src="<?php echo base_url('assets/img/ver-green.png')?>">
 	<div class="row container-text container-text-general">
 		<div class="col-md-7 content-left" >
 			<div class="col-md-11 col-sm-10 col-xs-10 in-1">
+			<h4 class="title-bottom"> RECYCLE </h4>
 			<h5 class="title-content">TYPE OF EACH PAVEMENT<br>CONSIDERING JAPAN ENVIRONMENT</h5>
 			<p>Type of each pavement considering Japan's environment</p>
 			<ul class="content-ul">
@@ -32,4 +32,7 @@
 		    </ul> 
 		</div>
 	</div>
+
+	<img class="bottom-image" src="<?php echo base_url('assets/img/bottom-right.png')?>">
+	<?php include "footer_text.php" ?>
 </div>

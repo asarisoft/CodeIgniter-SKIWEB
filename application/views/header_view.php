@@ -20,18 +20,13 @@
 		<div class="ct_container">
 			<h6 class="company-title">PT SUGAWARA KADII INDONESIA</h6>
 		</div >
-		<div class="col pl-0 ct_row_right">
+<!-- 		<div class="col pl-0 ct_row_right">
 			<hr style="">
-		</div>
+		</div> -->
 	</div>
 
 	<div class="search pl-0">
-		<img src="<?php echo base_url('assets/img/top-search.png')?>">
-		<div>
-			<b>IND | ENG </b>
-			<input class="ml-3" type="text">
-			<button class="bt-search"><span class="icon_"><i class="fa fa-search fa-lg"></i></span></button>
-		</div>
+		<b>IND | ENG </b>
 	</div>
 	<div class="clearfix"></div>
 
