@@ -13,6 +13,8 @@
 			<P>To Share consciouness of global enviromental issue, to make exertions in all possible activities internally or externally to implement environmental conservation</P>
 
 			<h4 class="greenh4"> MISSION </h4>
+			<P>Maintain the quality of services provided to customers and care about the environment</P>
+
 
 		</div>
 	</div>
