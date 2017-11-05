@@ -1,9 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends Front_end {
 
 	public function index()	{
+		echo $this->session->userdata("lang");
 		$data['active_menu'] = "index";
 		$this->load->view('header_view', $data);
 		$this->load->view('index_view');

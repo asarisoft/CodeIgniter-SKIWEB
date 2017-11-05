@@ -59,3 +59,11 @@ $route['recycle.html'] = 'home/recycle';
 $route['business.html'] = 'home/business';
 $route['gallery.html'] = 'home/gallery';
 $route['contact.html'] = 'home/contact';
+
+$route['^en/(.+)$'] = "$1";
+$route['^id/(.+)$'] = "$1";
+
+// '/en' and '/fr' URIs -> use default controller
+
+$route['^en$'] = $route['default_controller'];
+$route['^id$'] = $route['default_controller'];
