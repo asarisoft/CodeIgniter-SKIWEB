@@ -67,3 +67,30 @@ $route['^id/(.+)$'] = "$1";
 
 $route['^en$'] = $route['default_controller'];
 $route['^id$'] = $route['default_controller'];
+
+
+// Admin Page ...............................................
+// $route['admin'] =  'admin/banner';
+$route['admin/login.html'] =  'admin/authentication';
+$route['admin/dashboard.html'] =  'admin/dashboard/index/';
+$route['admin/logout.html'] =  'admin/authentication/logout';
+$route['admin/login.html'] =  'admin/authentication/login_process';
+
+// $route['admin/banner.html'] =  'admin/banner';
+// $route['admin/banner-text.html'] = 'admin/bannertext';
+// $route['admin/info-summary.html'] = 'admin/infosummary';
+// $route['admin/footer.html'] = 'admin/footer';
+// $route['admin/downloadable.html'] = 'admin/downloadable';
+// $route['admin/tagline.html'] = 'admin/tagline';
+// $route['admin/city-area.html'] = 'admin/cityarea';
+// $route['admin/buy.html'] = 'admin/buy';
+// $route['admin/banner-page.html'] = 'admin/bannerpage';
+// $route['admin/contact-us.html'] = 'admin/contactus';
+// $route['admin/blog.html'] = 'admin/blog';
+$route['admin/user.html'] = 'admin/user';
+// $route['admin/sell.html'] = 'admin/sell';
+// $route['admin/logout.html'] = 'admin/authentication/logout';
+// $route['admin/about.html'] = 'admin/about';
+// $route['admin/testimony.html'] = 'admin/testimony';
+// $route['admin/rent.html'] = 'admin/rent';
+

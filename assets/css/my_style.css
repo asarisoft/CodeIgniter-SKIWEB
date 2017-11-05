@@ -1,0 +1,149 @@
+.icon_ {
+	display: inline-block;
+    margin-right: 5px;
+    width: 22px;
+}
+
+.menu_page {
+	display: inline-block;;
+	margin-left: 20px;
+}
+
+
+/* titel all page */
+.title_page{
+    padding: 19px 19px 19px !important;
+    font-size: 18px;
+    margin-bottom: 11px;
+    font-weight: 600;
+    background: #5bc0de;
+    color: white;
+}
+
+.page-header {
+	margin: 30px 0 20px !important;
+}
+
+.label_header {
+	font-size: 13px;
+	font-weight: normal !important;
+}
+
+.input_header {
+	width: 61%;
+	display: inline-block;
+}
+
+
+/* panel heading atas */
+.panel-heading {
+	height: 45px; 
+    line-height: 0px; 
+}
+
+.panel-heading .col-md-2 {
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+}
+
+.panel-body {
+	padding: 10px 15px;
+}
+
+/* override all button */
+.btn {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.help-block p {
+    color: #e60c0c;
+    margin-left: 5px;
+}
+
+.control-label {
+	text-align: left !important;
+	padding-left: 20px !important;
+}
+
+.baris-baru {
+	padding: 15px 0px 12px 15px;
+}
+
+select {
+	padding: 6px 7px !important;
+}
+
+
+/* Tabel Content Tengah */
+.table>thead>tr>th {
+    height: 30px;
+}
+
+.table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 4px 9px;
+    vertical-align: middle; 
+}
+
+/*Image banner in table*/
+.banner_image {
+	height: 80px;
+}
+
+.img_thumb_edit {
+	width: 150px;
+}
+
+.form-group {
+    margin-bottom: 3px !important;
+}
+
+/* sell image list */
+.lst_thmb {
+	width: 150px;
+}
+.element {
+	margin-left: 10px;
+}
+
+
+/* Override boostrsap color and som style */
+.navbar-inverse {
+    background-color: #463e43 !important;
+    color: white !important;
+}
+
+th {
+	color: white;	
+	background: #464646;
+	text-align: center;
+}
+
+.btn-success {
+	background-color: #464646;
+	border: #464646;
+}
+
+.btn-success:hover {
+	background-color: #464646;
+	border: #464646;
+}
+
+.nav>li>a {
+    padding: 7px 15px;
+}
+
+.sidebar ul.nav ul.children li a {
+    height: 35px;
+    background: white;
+}
+
+.fa {
+	width: 17px;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
