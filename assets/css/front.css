@@ -886,3 +886,8 @@ label {
     text-decoration: none;
 }
 
+.footer-line2 {
+    font-weight: bold; 
+    font-size: 15px; 
+    margin: 3px 0;
+}

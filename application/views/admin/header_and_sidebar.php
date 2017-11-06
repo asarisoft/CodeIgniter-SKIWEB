@@ -156,7 +156,7 @@
 <!-- 
             <li><a href="<?php echo base_url('admin/buy.html')?>"><span class="icon_"><i class="fa fa-cart-arrow-down "></i></span>Buy</a></li> -->
 
-<!--             <li><a href="<?php echo site_url()?>admin/footer.html"><span class="fa fa-window-minimize">&nbsp;</span> Footer</a></li> -->
+            <li><a href="<?php echo site_url()?>admin/footer.html"><span class="fa fa-window-minimize">&nbsp;</span> Footer</a></li>
 
 <!--             <li><a class="" href="<?php echo site_url()?>admin/downloadable.html"><span class="fa fa-file-pdf-o">&nbsp;</span> File download</a></li> -->
 

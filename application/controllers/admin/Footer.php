@@ -26,9 +26,7 @@ class Footer extends MY_Controller {
         foreach ($list as $footer) {
             $no++;
             $row = array();
-            $row[] = "<img cumlass='banner_image' src='".base_url($footer->img_url)."' style='background: black;'/>";
             $row[] = $footer->description;
-            $row[] = $footer->position;
             $row[] = '<a class="btn btn-sm btn-info" href="footer/edit/'.$footer->id.'" title="edit"><i class="glyphicon glyphicon-pencil"></i></a>';
             $data[] = $row;
         }
