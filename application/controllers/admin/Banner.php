@@ -10,8 +10,8 @@ class Banner extends MY_Controller {
         # Merge with parrent
         $this->config_upload['upload_path'] = './assets/img/banner/';
         $this->load->library('upload', $this->config_upload);
-        $this->conf_crop['height'] = 500;
-        $this->conf_crop['width'] = 1280;
+        $this->conf_crop['height'] = 656;
+        $this->conf_crop['width'] = 1835;
     }
 
     public function index() {

@@ -101,7 +101,7 @@
 
     <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
         <ul class="nav menu" style="margin-top: 20px; padding-bottom: 40px;">
-            <li class="parent "><a data-toggle="collapse" href="#sub-item-1">
+            <!-- <li class="parent "><a data-toggle="collapse" href="#sub-item-1">
                 <em class="fa fa-home">&nbsp;</em> Home <span data-toggle="" href="
                 #sub-item-1" class="icon pull-right"></span>
                 </a>
@@ -152,19 +152,19 @@
                         <span class="fa fa-star-o">&nbsp;</span> Testimony
                     </a></li>
                 </ul>
-            </li>
+            </li> -->
+<!-- 
+            <li><a href="<?php echo base_url('admin/buy.html')?>"><span class="icon_"><i class="fa fa-cart-arrow-down "></i></span>Buy</a></li> -->
 
-            <li><a href="<?php echo base_url('admin/buy.html')?>"><span class="icon_"><i class="fa fa-cart-arrow-down "></i></span>Buy</a></li>
+<!--             <li><a href="<?php echo site_url()?>admin/footer.html"><span class="fa fa-window-minimize">&nbsp;</span> Footer</a></li> -->
 
-            <li><a href="<?php echo site_url()?>admin/footer.html"><span class="fa fa-window-minimize">&nbsp;</span> Footer</a></li>
+<!--             <li><a class="" href="<?php echo site_url()?>admin/downloadable.html"><span class="fa fa-file-pdf-o">&nbsp;</span> File download</a></li> -->
 
-            <li><a class="" href="<?php echo site_url()?>admin/downloadable.html"><span class="fa fa-file-pdf-o">&nbsp;</span> File download</a></li>
+<!--             <li><a href="<?php echo base_url('admin/banner-page.html')?>"><span class="icon_"><i class="fa fa fa-picture-o "></i></span>Banner page</a></li> -->
 
-            <li><a href="<?php echo base_url('admin/banner-page.html')?>"><span class="icon_"><i class="fa fa fa-picture-o "></i></span>Banner page</a></li>
-
-            <li><a href="<?php echo base_url('admin/blog.html')?>"><span class="icon_"><i class="fa fa fa-rss "></i></span>Blog</a></li>
-
-            <li><a href="<?php echo base_url('admin/contact-us.html')?>"><span class="icon_"><i class="fa fa fa-envelope-o "></i></span>Contact us</a></li>
+<!--             <li><a href="<?php echo base_url('admin/blog.html')?>"><span class="icon_"><i class="fa fa fa-rss "></i></span>Blog</a></li>
+ -->
+            <li><a href="<?php echo site_url()?>admin/banner.html"><span class="icon_"><i class="fa fa-file-image-o"></i></span>Slider Banner</a></li>
 
             <li><a href="<?php echo base_url('admin/user.html')?>"><span class="icon_"><i class="fa fa-user-o "></i></span>User</a></li>
 

@@ -76,7 +76,7 @@ $route['admin/dashboard.html'] =  'admin/dashboard/index/';
 $route['admin/logout.html'] =  'admin/authentication/logout';
 $route['admin/login.html'] =  'admin/authentication/login_process';
 
-// $route['admin/banner.html'] =  'admin/banner';
+$route['admin/banner.html'] =  'admin/banner';
 // $route['admin/banner-text.html'] = 'admin/bannertext';
 // $route['admin/info-summary.html'] = 'admin/infosummary';
 // $route['admin/footer.html'] = 'admin/footer';

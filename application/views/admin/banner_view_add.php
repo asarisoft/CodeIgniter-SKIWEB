@@ -20,8 +20,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-2">Baner image (1280px x 500px)</label>
-                                    <div class="col-md-2">
+                                    <label class="control-label col-md-3">Image (1835px * 656px)</label>
+                                    <div class="col-md-3">
                                         <img id="image_preview" class="img_thumb_edit"></i>
                                     </div>
                                     <div class="col-md-3">
