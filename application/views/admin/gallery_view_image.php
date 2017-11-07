@@ -2,11 +2,11 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="panel panel-default">
-				<h4 class="title_page"><?php echo $sell->subject ?></h4>
+				<h4 class="title_page"><?php echo $gallery->title ?></h4>
 				<div class="panel-body">
 					<p> Please crop image to (1060 x 50px) before upload</p>
-		            <form action="<?php echo site_url("admin/sell/upload") ?>" id="form-upload"> 
-		              <input type="hidden" value="<?php echo $sell_id ?>" name="id" id="input_id"/>            
+		            <form action="<?php echo site_url("admin/gallery/upload") ?>" id="form-upload"> 
+		              <input type="hidden" value="<?php echo $gallery_id ?>" name="id" id="input_id"/>            
 		              <div class="fileinput fileinput-new input-group" data-provides="fileinput">
 		                <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
 		                <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new"><i class="glyphicon glyphicon-paperclip"></i> Select file</span><span class="fileinput-exists"><i class="glyphicon glyphicon-repeat"></i> Change</span><input type="file" name="file[]" multiple="multiple" id="file"></span>
@@ -92,7 +92,7 @@
 		$.ajax({
 			url: uploadURI,
 			type: 'post',
-			data: {file_to_remove: me.attr('data-file'), id:"<?php echo ($sell_id) ?>"},
+			data: {file_to_remove: me.attr('data-file'), id:"<?php echo ($gallery_id) ?>"},
 			success: function() {
 				me.closest('li').remove();
 			}
@@ -103,10 +103,10 @@
 	function listFilesOnServer () {
 		var inputID = $('#input_id')[0].value;
 		var items = [];
-		$.getJSON("<?php echo base_url('admin/sell/filelist/'.$sell_id.'/') ?>", function(data) {
+		$.getJSON("<?php echo base_url('admin/gallery/filelist/'.$gallery_id.'/') ?>", function(data) {
 			$.each(data, function(index, element) {
 				if (element != "thumb") {
-				var image = '<img class="lst_thmb" src="<?php echo base_url('assets/img/sell/'.$sell_id.'/') ?>'+ element +'">';
+				var image = '<img class="lst_thmb" src="<?php echo base_url('assets/img/gallery/'.$gallery_id.'/') ?>'+ element +'">';
 				items.push('<li class="list-group-item">' + image + '<span class="element"> '+ element  + '</span><div class="pull-right"><a href="#" data-file="' + element + '" class="remove-file"><i class="glyphicon glyphicon-remove"></i></a></div></li>');
 				}
 			});

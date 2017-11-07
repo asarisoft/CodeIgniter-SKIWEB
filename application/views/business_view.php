@@ -1,4 +1,4 @@
-<div class="container container-about1" style="z-index: -2"></div>
+<div class="container container-about1" style="z-index: -2;  background: url('<?php echo base_url('assets/img/page-banner2.png') ?>"></div>
 <div class="container container-about2 container-recycle">
 	<!-- <h3 class="title-bottom"> BUSINESS </h3> -->
 	<img class="ver_green ver_green_rec_first" src="<?php echo base_url('assets/img/ver-green.png')?>">

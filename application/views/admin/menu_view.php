@@ -11,9 +11,10 @@
 					<table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">
 			            <thead>
 			                <tr>
-			                    <th>Title</th>
-			                    <th>Date</th>
-			                    <th>Status</th>
+			                    <th>Name</th>
+			                    <th>Queue</th>
+			                    <th>Language</th>
+			                    <th>Url</th>
 			                    <th style="width:70px;">Action</th>
 			                </tr>
 			            </thead>

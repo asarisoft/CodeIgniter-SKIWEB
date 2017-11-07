@@ -5,6 +5,7 @@
             table = $('#table').DataTable({ 
                 "processing": true, 
                 "serverSide": true,
+                "displayLength": 25,
                 "order": [],
                 "ajax": {
                     "url": "<?php echo site_url()?>" + "admin/<?php echo ($model_name) ?>/ajax_list",

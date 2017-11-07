@@ -354,10 +354,10 @@ li.active > a.nav-link, a:hover.nav-link{
 
 @media (min-width: 768px) {
     .container-about1 {
-        height: 262px;
+        height: 358px;
     }
     .container-about2 {
-        min-height: 302px;
+        min-height: 256px;
     }
 
     .container-text {

@@ -153,18 +153,19 @@
                     </a></li>
                 </ul>
             </li> -->
-<!-- 
-            <li><a href="<?php echo base_url('admin/buy.html')?>"><span class="icon_"><i class="fa fa-cart-arrow-down "></i></span>Buy</a></li> -->
+            <li><a href="<?php echo site_url()?>admin/banner.html"><span class="icon_"><i class="fa fa-file-image-o"></i></span>Slider Banner</a></li>
+            <li><a href="<?php echo site_url()?>admin/page-content.html"><span class="icon_"><i class="fa fa-file-image-o"></i></span>Page Content</a></li>
+
+            <li><a href="<?php echo base_url('admin/menu.html')?>"><span class="icon_"><i class="fa fa-cart-arrow-down "></i></span>Menu</a></li>
 
             <li><a href="<?php echo site_url()?>admin/footer.html"><span class="fa fa-window-minimize">&nbsp;</span> Footer</a></li>
 
-<!--             <li><a class="" href="<?php echo site_url()?>admin/downloadable.html"><span class="fa fa-file-pdf-o">&nbsp;</span> File download</a></li> -->
+            <li><a class="" href="<?php echo site_url()?>admin/gallery.html"><span class="fa fa-file-pdf-o">&nbsp;</span> Gallery </a></li>
 
-<!--             <li><a href="<?php echo base_url('admin/banner-page.html')?>"><span class="icon_"><i class="fa fa fa-picture-o "></i></span>Banner page</a></li> -->
+            <li><a href="<?php echo base_url('admin/banner-page.html')?>"><span class="icon_"><i class="fa fa fa-picture-o "></i></span>Banner page</a></li>
 
 <!--             <li><a href="<?php echo base_url('admin/blog.html')?>"><span class="icon_"><i class="fa fa fa-rss "></i></span>Blog</a></li>
  -->
-            <li><a href="<?php echo site_url()?>admin/banner.html"><span class="icon_"><i class="fa fa-file-image-o"></i></span>Slider Banner</a></li>
 
             <li><a href="<?php echo base_url('admin/user.html')?>"><span class="icon_"><i class="fa fa-user-o "></i></span>User</a></li>
 

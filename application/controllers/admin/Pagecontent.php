@@ -1,44 +1,47 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Bannerpage extends MY_Controller {
+class Pagecontent extends MY_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->load->model('Bannerpage_Model','bannerpage');
+        $this->load->model('Pagecontent_Model','pagecontent');
 
         # Merge with parrent
-        $this->config_upload['upload_path'] = './assets/img/bannerpage/';
+        $this->config_upload['upload_path'] = './assets/img/pagecontent/';
         $this->load->library('upload', $this->config_upload);
         $this->conf_crop['height'] = 358;
         $this->conf_crop['width'] = 1290;
     }
 
     public function index() {
-        $data['model_name'] = "bannerpage";
+        $data['model_name'] = "pagecontent";
         $this->load->view('admin/header_and_sidebar');
-        $this->load->view('admin/bannerpage_view');
+        $this->load->view('admin/pagecontent_view');
         $this->load->view('admin/footer', $data);
     }
 
     public function ajax_list() {
-        $list = $this->bannerpage->get_datatables();
+        $list = $this->pagecontent->get_datatables();
         $data = array();
         $no = $_POST['start'];
-        foreach ($list as $bannerpage) {
+        foreach ($list as $pagecontent) {
             $no++;
             $row = array();
-            $row[] = "<img class='banner_image' src='".base_url($bannerpage->img_url)."'/>";
-            $row[] = $bannerpage->page;
+            $row[] = "<img class='banner_image' src='".base_url($pagecontent->img_url)."'/>";
+            $row[] = $pagecontent->number;
+            $row[] = $pagecontent->page;
+            $row[] = $pagecontent->title;
+            $row[] = $pagecontent->language;
             $row[] = '
-                <a class="btn btn-sm btn-info" href="bannerpage/edit/'.$bannerpage->id.'" title="edit"><i class="glyphicon glyphicon-pencil"></i></a>';
+                <a class="btn btn-sm btn-info" href="pagecontent/edit/'.$pagecontent->id.'" title="edit"><i class="glyphicon glyphicon-pencil"></i></a>';
             $data[] = $row;
         }
 
         $output = array(
             "draw" => $_POST['draw'],
-            "recordsTotal" => $this->bannerpage->count_all(),
-            "recordsFiltered" => $this->bannerpage->count_filtered(),
+            "recordsTotal" => $this->pagecontent->count_all(),
+            "recordsFiltered" => $this->pagecontent->count_filtered(),
             "data" => $data,
         );
         echo json_encode($output);
@@ -47,14 +50,14 @@ class Bannerpage extends MY_Controller {
     function add() {
         $data['image_error'] = "";
         $this->load->view('admin/header_and_sidebar');
-        $this->load->view('admin/bannerpage_view_add', $data);
+        $this->load->view('admin/pagecontent_view_add', $data);
     }
 
     function edit($id) {
         $data['image_error'] = "";
-        $data['bannerpage'] = $this->bannerpage->get_by_id($id);
+        $data['pagecontent'] = $this->pagecontent->get_by_id($id);
         $this->load->view('admin/header_and_sidebar');
-        $this->load->view('admin/bannerpage_view_edit',$data);
+        $this->load->view('admin/pagecontent_view_edit',$data);
     }
 
     function update() {  
@@ -79,37 +82,40 @@ class Bannerpage extends MY_Controller {
                     $this->image_lib->crop();
 
                     $data_update = array(
-                        'img_url' => '/assets/img/bannerpage/'.$upload_data['file_name'],
+                        'img_url' => '/assets/img/pagecontent/'.$upload_data['file_name'],
                         'file_name' => $upload_data['file_name']
                     );
                 }
             }
 
             if($data['image_error'] == ""){
-                // $data_update['status'] = $this->input->post('status');
                 $data_update['page'] = $this->input->post('page');
-                $this->bannerpage->update(array('id' => $this->input->post('id')), $data_update);
-                redirect('admin/banner-page.html');
+                $data_update['number'] = $this->input->post('number');
+                $data_update['title'] = $this->input->post('title');
+                $data_update['language'] = $this->input->post('language');
+                $data_update['description'] = $this->input->post('description');
+                $this->pagecontent->update(array('id' => $this->input->post('id')), $data_update);
+                redirect('admin/page-content.html');
             } else {
-                $data['bannerpage'] = $this->bannerpage->get_by_id($this->input->post('id'));
+                $data['pagecontent'] = $this->pagecontent->get_by_id($this->input->post('id'));
                 $this->load->view('/admin/header_and_sidebar');
-                $this->load->view('/admin/bannerpage_view_edit', $data);
+                $this->load->view('/admin/pagecontent_view_edit', $data);
             }
 
         } else {
-            $data['bannerpage'] = $this->bannerpage->get_by_id($this->input->post('id'));
+            $data['pagecontent'] = $this->pagecontent->get_by_id($this->input->post('id'));
             $this->load->view('/admin/header_and_sidebar');
-            $this->load->view('/admin/bannerpage_view_edit', $data);
+            $this->load->view('/admin/pagecontent_view_edit', $data);
         }
     }
 
     function delete($id) {  
-        $bannerpage_ = $this->bannerpage->get_by_id($id);
-        $path = ".".$bannerpage_->img_url;
-        if (($bannerpage_->img_url != "") && (file_exists($path))) {
+        $pagecontent_ = $this->pagecontent->get_by_id($id);
+        $path = ".".$pagecontent_->img_url;
+        if (($pagecontent_->img_url != "") && (file_exists($path))) {
             unlink($path);
         }
-        $this->bannerpage->delete($id);
+        $this->pagecontent->delete($id);
         echo json_encode(array("status" => TRUE));
     }
 

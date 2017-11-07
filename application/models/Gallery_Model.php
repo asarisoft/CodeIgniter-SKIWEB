@@ -1,10 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class BannerText_Model extends CI_Model {
-	var $table = 'banner_text';
-	var $column_order = array('id'); 
-	var $column_search = array('id'); 
+class Gallery_Model extends CI_Model {
+	var $table = 'gallery';
+	var $column_order = array('title'); 
+	var $column_search = array('title'); 
 	var $order = array('id' => 'desc'); 
 
 	public function __construct() {
@@ -82,14 +82,7 @@ class BannerText_Model extends CI_Model {
 
 	// needed 
 	public function delete($id) {
-		$banner_ = $this->db->where('id', $id);
+		$this->db->where('id', $id);
 		$this->db->delete($this->table);
 	}
-
-	public function get_last() {
-		$this->db->from($this->table);
-		$query = $this->db->get();
-		return $query->last_row();
-	}
-
 }

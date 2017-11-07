@@ -1,11 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Blog_Model extends CI_Model {
-	var $table = 'blog';
-	var $column_order = array('title', 'status'); 
-	var $column_search = array('title', 'status'); 
-	var $order = array('id' => 'desc'); 
+class Menu_Model extends CI_Model {
+	var $table = 'menu';
+	var $column_order = array('id'); 
+	var $column_search = array('id'); 
+	var $order = array('id' => 'asc'); 
 
 	public function __construct() {
 		parent::__construct();
@@ -82,27 +82,14 @@ class Blog_Model extends CI_Model {
 
 	// needed 
 	public function delete($id) {
-		$this->db->where('id', $id);
+		$banner_ = $this->db->where('id', $id);
 		$this->db->delete($this->table);
 	}
 
-
-	public function get_published_count()	{
+	public function get_last() {
 		$this->db->from($this->table);
-		$this->db->where('status',"Publish");
-		return $this->db->count_all_results();
-	}
-
-
-	public function get_published_blog($limit, $start) {
-		$this->db->from($this->table);
-		$this->db->where('status',"Publish");
-		$this->db->limit($limit, $start);
-        $query = $this->db->get();
-        if ($query->num_rows() > 0) {
-			return $query->result_array();
-        }
-        return false;
+		$query = $this->db->get();
+		return $query->last_row();
 	}
 
 }

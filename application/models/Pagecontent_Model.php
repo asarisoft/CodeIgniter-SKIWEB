@@ -1,11 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Bannerpage_Model extends CI_Model {
-	var $table = 'banner_page';
+class Pagecontent_Model extends CI_Model {
+	var $table = 'page_content';
 	var $column_order = array('page'); 
-	var $column_search = array('page'); 
-	var $order = array('id' => 'desc'); 
+	var $column_search = array('page','title'); 
+	var $order = array('number' => 'asc'); 
 
 	public function __construct() {
 		parent::__construct();
