@@ -2,15 +2,14 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="panel panel-default">
-				<h4 class="title_page">Banner List</h4>
+				<h4 class="title_page">About</h4>
 				<div class="panel-body">
 					<table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">
 			            <thead>
 			                <tr>
-			                	<th width="25%">Top Image</th>
-			                	<th width="23%">Second Image</th>
-			                	<th width="23%">Third Image</th>
-			                    <th style="width:100px;">Action</th>
+			                	<th width="10%">Banner</th>
+			                	<th width="80%">Language</th>
+			                    <th style="width:10px;">Action</th>
 			                </tr>
 			            </thead>
 			            <tbody></tbody>

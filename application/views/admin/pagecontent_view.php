@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="panel panel-default">
-				<h4 class="title_page">Page Content</h4>
+				<h4 class="title_page">Page content</h4>
 				<div class="panel-body">
 					<table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">
 			            <thead>

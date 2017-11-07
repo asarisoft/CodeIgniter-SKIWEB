@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="panel panel-default">
-				<h4 class="title_page">Blog</h4>
+				<h4 class="title_page">Menu</h4>
 				<div class="panel-heading">
 				    <a href="blog/add" class="btn btn-success" onclick="add()"><i class="glyphicon glyphicon-plus"></i>Add</a>
 					<button class="btn btn-default" onclick="reload_table()"><i class="glyphicon glyphicon-refresh"></i>Reload</button>
