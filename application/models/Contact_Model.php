@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ContactUs_Model extends CI_Model {
-	var $table = 'contact_us';
+class Contact_Model extends CI_Model {
+	var $table = 'contact';
 	var $column_order = array('id'); 
 	var $column_search = array('id'); 
 	var $order = array('id' => 'desc'); 
@@ -85,13 +85,4 @@ class ContactUs_Model extends CI_Model {
 		$this->db->where('id', $id);
 		$this->db->delete($this->table);
 	}
-
-
-	public function get_last() {
-		$this->db->from($this->table);
-		$this->db->limit(1);
-		$query = $this->db->get();
-		return $query->row();	
-	}
-
 }

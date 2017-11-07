@@ -2,13 +2,15 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="panel panel-default">
-				<h4 class="title_page">Contact Us <a class="btn btn-sm btn-info" 
-                    style="float: right; background: red;" href="<?php echo base_url('contact') ?>" title="Preview" target="_blank"><i class="glyphicon glyphicon-eye-open"></i></a></h4>
+				<h4 class="title_page">Buy</h4>
 				<div class="panel-body">
 					<table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">
 			            <thead>
 			                <tr>
-			                    <th>Description</th>
+			                    <th>Email</th>
+			                    <th>Phone</th>
+			                    <th>Fax</th>
+			                    <th>Email receiver</th>
 			                    <th style="width:70px;">Action</th>
 			                </tr>
 			            </thead>

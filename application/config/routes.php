@@ -80,18 +80,11 @@ $route['admin/banner.html'] =  'admin/banner';
 $route['admin/menu.html'] = 'admin/menu';
 $route['admin/gallery.html'] = 'admin/gallery';
 $route['admin/footer.html'] = 'admin/footer';
-// $route['admin/downloadable.html'] = 'admin/downloadable';
-// $route['admin/tagline.html'] = 'admin/tagline';
-// $route['admin/city-area.html'] = 'admin/cityarea';
-// $route['admin/buy.html'] = 'admin/buy';
 $route['admin/banner-page.html'] = 'admin/bannerpage';
 $route['admin/page-content.html'] = 'admin/pagecontent';
-// $route['admin/contact-us.html'] = 'admin/contactus';
-// $route['admin/blog.html'] = 'admin/blog';
 $route['admin/user.html'] = 'admin/user';
-// $route['admin/sell.html'] = 'admin/sell';
-// $route['admin/logout.html'] = 'admin/authentication/logout';
-// $route['admin/about.html'] = 'admin/about';
-// $route['admin/testimony.html'] = 'admin/testimony';
-// $route['admin/rent.html'] = 'admin/rent';
+
+$route['admin/contact.html'] = 'admin/contact';
+$route['admin/about.html'] = 'admin/about';
+
 

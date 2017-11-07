@@ -164,8 +164,8 @@
 
             <li><a href="<?php echo base_url('admin/banner-page.html')?>"><span class="icon_"><i class="fa fa fa-picture-o "></i></span>Banner page</a></li>
 
-<!--             <li><a href="<?php echo base_url('admin/blog.html')?>"><span class="icon_"><i class="fa fa fa-rss "></i></span>Blog</a></li>
- -->
+            <li><a href="<?php echo base_url('admin/contact.html')?>"><span class="icon_"><i class="fa fa fa-rss "></i></span>Contact</a></li>
+
 
             <li><a href="<?php echo base_url('admin/user.html')?>"><span class="icon_"><i class="fa fa-user-o "></i></span>User</a></li>
 
