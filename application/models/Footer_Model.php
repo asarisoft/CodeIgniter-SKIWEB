@@ -86,4 +86,10 @@ class Footer_Model extends CI_Model {
 		$this->db->delete($this->table);
 	}
 
+	public function get_last() {
+		$this->db->from($this->table);
+		$query = $this->db->get();
+		return $query->last_row();
+	}
+
 }

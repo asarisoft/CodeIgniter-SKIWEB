@@ -884,12 +884,15 @@ label {
 }
 
 .footer > p > a {
-    color: white;
+    color: white !important;
+    font-weight: bold;
+    font-size: 15px; 
 }
 
 .footer > p > a:hover {
-    color: #33D100;
-    text-decoration: none;
+    color: #33D100 !important;
+    text-decoration: none !important;
+    font-weight: bold;
 }
 
 .footer-line2 {
