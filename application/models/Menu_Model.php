@@ -86,10 +86,12 @@ class Menu_Model extends CI_Model {
 		$this->db->delete($this->table);
 	}
 
-	public function get_last() {
+	public function get_all() {
 		$this->db->from($this->table);
+		$this->db->where('language', $this->session->userdata("lang"));
 		$query = $this->db->get();
-		return $query->last_row();
+		return $query->result();
 	}
+
 
 }

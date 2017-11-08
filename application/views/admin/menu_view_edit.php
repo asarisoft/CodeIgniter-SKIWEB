@@ -39,7 +39,7 @@
                                     <div class="col-md-10">
                                          <select name="language" class="form-control" >
                                             <option <?php if ($menu->language == "en") echo "selected"; ?> value="en">En</option>
-                                            <option <?php if ($menu->language == "id") echo "selected"; ?> value="id">ID</option>
+                                            <option <?php if ($menu->language == "id") echo "selected"; ?> value="id">Id</option>
                                         </select>
                                         <span class="help-block"></span>
                                     </div>

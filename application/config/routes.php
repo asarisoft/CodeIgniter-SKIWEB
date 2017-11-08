@@ -21,7 +21,7 @@ $route['^id$'] = $route['default_controller'];
 // Admin Page ...............................................
 $route['admin/login.html'] =  'admin/authentication';
 $route['admin/logout.html'] =  'admin/authentication/logout';
-// $route['admin/login.html'] =  'admin/authentication/login_process';
+$route['admin/login.html'] =  'admin/authentication/login_process';
 
 $route['admin/banner.html'] =  'admin/banner';
 $route['admin/menu.html'] = 'admin/menu';

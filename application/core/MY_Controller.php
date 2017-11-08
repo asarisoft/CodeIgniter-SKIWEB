@@ -62,9 +62,13 @@ class MY_Controller extends CI_Controller {
 
 
 Class Front_end extends CI_Controller {
+    public $data_menu = [];
+
     function __construct() {
         parent::__construct();
         $this->load_lang();
+        $this->load->model('Menu_Model','menu');
+        $this->data_menu = $this->menu->get_all();
     }
 
     protected function load_lang() {
@@ -81,5 +85,5 @@ Class Front_end extends CI_Controller {
             $this->config->set_item('language',$lang);
             $this->session->set_userdata("lang",'en');
         }
-    }
+    }   
 }

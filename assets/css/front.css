@@ -2,11 +2,17 @@
 /*primary #463e43*/
 /*green #33D100*/
 /*darlk-primary 2d282a*/
-
 body {
     background-color: #463e43;
 }
 
+a.lang {
+    color: white !important;
+}
+
+a.lang:hover {
+    text-decoration: none;
+}
 
 .bottom-image {
     position: absolute;
