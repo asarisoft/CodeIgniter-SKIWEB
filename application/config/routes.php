@@ -17,7 +17,6 @@ $route['^id/(.+)$'] = "$1";
 $route['^en$'] = $route['default_controller'];
 $route['^id$'] = $route['default_controller'];
 
-
 // Admin Page ...............................................
 $route['admin/login.html'] =  'admin/authentication';
 $route['admin/logout.html'] =  'admin/authentication/logout';

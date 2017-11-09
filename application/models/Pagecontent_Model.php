@@ -93,9 +93,9 @@ class Pagecontent_Model extends CI_Model {
         return $query->row();
     }
 
-    public function get_by_id_2($id) {
+    public function get_by_number($number) {
         $this->db->from($this->table);
-        $this->db->where('id', $id);
+        $this->db->where('number', $number);
         $this->db->where('language', $this->session->userdata("lang"));
         $query = $this->db->get();
         return $query->row();

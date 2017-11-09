@@ -15,11 +15,12 @@
             <img class="logo" src="<?php echo base_url('assets/img/logo.png') ?>">
             <div class="row ct">
                 <div class="ct_container">
+  <!--                   <?php echo substr($_SERVER["REQUEST_URI"], 8); ?> -->
                     <h6 class="company-title">PT SUGAWARA KADII INDONESIA</h6>
                 </div >
             </div>
             <div class="search pl-0">
-                <b><a class="lang" href="<?php echo base_url('/id') ?>"> IND </a> | <a class="lang" href="<?php echo base_url('/en') ?>">ENG </a></b>
+                <b><a class="lang" href="<?php echo base_url('/id/'.substr($_SERVER["REQUEST_URI"], 8)) ?>"> IND </a> | <a class="lang" href="<?php echo base_url('/en/'.substr($_SERVER["REQUEST_URI"], 8)) ?>">ENG </a></b>
             </div>
             <div class="clearfix"></div>
             <nav class="navbar navbar-expand-md">
@@ -32,7 +33,7 @@
 
                     	<?php foreach($menu as $index => $mn) { ?>
                         <li class="nav-item <?php if ($active_menu == $mn->url) { echo 'active'; }?>">
-                            <a class="nav-link " href="<?php echo site_url('home/'.$mn->url)?>"><?php echo $mn->name ?><span class="sr-only">(current)</span></a>
+                            <a class="nav-link " href="<?php echo site_url($lang.'/home/'.$mn->url)?>"><?php echo $mn->name ?><span class="sr-only">(current)</span></a>
                         </li>
                         <?php } ?>
                         
