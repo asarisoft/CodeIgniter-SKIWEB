@@ -6,6 +6,13 @@ body {
     background-color: #463e43;
 }
 
+.alert {
+    font-size: 14px;
+    width: 100%;
+    padding: 9px 23px !important;
+    margin-bottom: 29px !important;
+}
+
 a.lang {
     color: white !important;
 }

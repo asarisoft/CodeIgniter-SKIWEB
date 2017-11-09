@@ -20,28 +20,37 @@
 			
 		</div>
 		<div class="col-md-5 contact-right">
-			<form>
+			<form action="" method="post">
+				<?php if ($this->session->flashdata('success')) { ?>
+                    <div class="alert alert-success alert-dismissible show" role="alert" >
+                      <?php echo $this->session->flashdata('success');?>
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="top:-5px; font-size: 26px;">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                <?php } ?>
+
 				<P><label>NAMA</label>
-					<br><input type="text" class="input-contact">
+					<br><input type="text" name="name" class="input-contact" required>
 				</P>
 
 				<P><label>PERUSAHAAN</label>
-				<br><input type="text" class="input-contact">
+				<br><input type="text" name="company" class="input-contact" required>
 				</P>
 
 				<p><label>EMAIL</label>
-				<br><input type="text" class="input-contact">
+				<br><input type="email" class="input-contact" name="email" required>
 				</p>
 
 				<p><label>JUDUL</label>
-				<br><input type="text" class="input-contact">
+				<br><input type="text" class="input-contact" name="subject" required>
 				</p>
 
 				<p><label>PESAN</label>
 				<br><textarea name="message" class="input-contact"></textarea>
 				</p>
 
-				<button class="button-send" style="float: right; margin-right: 15px">SEND</button>
+				<button class="button-send" style="float: right; margin-right: 15px">KIRIM</button>
 			</form>
 		</div>
 	</div>

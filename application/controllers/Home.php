@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+require('helper.php');
 
 class Home extends Front_end {
-
 	public function __construct() {
 		parent::__construct();
 	}
@@ -88,8 +88,20 @@ class Home extends Front_end {
 
 		$this->load->model('Contact_Model','contact');
 		$data["contact"] = $this->contact->get_last();
-
 		$lang = $this->session->userdata("lang");
+
+		if ($this->input->post('name') && $this->input->post('email')) {
+            $from = ["contact-us@sugawarakadii.co.id", $this->input->post('name')];
+            $subject = $this->input->post('subject'); 
+            $message = "Sender Information : <br> Name : ". $this->input->post('name') . "<br> Email : " . $this->input->post('email') . "<br> Company : " . $this->input->post('company') . "<br> " . $this->input->post('message');
+            sendEmail($from, $data['contact']->email_receiver, $this->input->post('name'), $subject, $message);
+            if($lang == 'en') {
+            	$this->session->set_flashdata('success', 'Message has been send, thank you');
+            } else {
+            	$this->session->set_flashdata('success', 'Pesan telah dikirim, terimakasih');
+            }
+            redirect(site_url($lang.'/home/contact'));
+        }
 
 		$this->load->view('header_view', $data);
 		$this->load->view('contact_view_'.$lang);
