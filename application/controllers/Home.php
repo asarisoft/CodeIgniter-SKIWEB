@@ -86,8 +86,13 @@ class Home extends Front_end {
 		$data['menu'] = $this->data_menu;
 		$data["footer"] = $this->data_footer;
 
+		$this->load->model('Contact_Model','contact');
+		$data["contact"] = $this->contact->get_last();
+
+		$lang = $this->session->userdata("lang");
+
 		$this->load->view('header_view', $data);
-		$this->load->view('contact_view');
+		$this->load->view('contact_view_'.$lang);
 		$this->load->view('footer_view');	
 	}
 }
