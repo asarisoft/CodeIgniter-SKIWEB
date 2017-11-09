@@ -9,6 +9,15 @@
 		                    <input type="hidden" value="<?php echo $about->file_name ?>" name="file_name"/> 
 		                    <input type="hidden" value="<?php echo $about->img_url ?>" name="img_url"/>
 		                    <div class="form-body">
+		                    	<div class="form-group">
+                                    <label class="control-label col-md-2">Title</label>
+                                    <div class="col-md-10">
+                                        <input name="title" class="form-control" type="text" 
+                                            value="<?php echo $about->title ?>">
+                                        <span class="help-block"><?php echo form_error('title'); ?></span>
+                                    </div>
+                                </div>
+
 		                        <div class="form-group">
                                     <label class="control-label col-md-2">Language</label>
                                     <div class="col-md-10">
@@ -39,6 +48,7 @@
 		                            </div>
 		                        </div>
 
+
 		                        <div class="form-group">
                                     <label class="control-label col-md-2">Description</label>
                                     <div class="col-md-10">
@@ -47,6 +57,16 @@
                                     </div>
                                 </div> 
 
+		                    	<div class="form-group">
+                                    <label class="control-label col-md-2">Title Vission</label>
+                                    <div class="col-md-10">
+                                        <input name="visi_title" class="form-control" type="text" 
+                                            value="<?php echo $about->visi_title ?>">
+                                        <span class="help-block"><?php echo form_error('visi_title'); ?></span>
+                                    </div>
+                                </div>
+
+
                                 <div class="form-group">
                                     <label class="control-label col-md-2">Visson</label>
                                     <div class="col-md-10">
@@ -54,6 +74,15 @@
                                         <span class="help-block"><?php echo form_error('vission'); ?></span>
                                     </div>
                                 </div> 
+
+		                    	<div class="form-group">
+                                    <label class="control-label col-md-2">Title Mission</label>
+                                    <div class="col-md-10">
+                                        <input name="misi_title" class="form-control" type="text" 
+                                            value="<?php echo $about->misi_title ?>">
+                                        <span class="help-block"><?php echo form_error('misi_title'); ?></span>
+                                    </div>
+                                </div>
 
                                 <div class="form-group">
                                     <label class="control-label col-md-2">Mission</label>

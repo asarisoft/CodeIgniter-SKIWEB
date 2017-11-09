@@ -90,6 +90,10 @@ class About extends MY_Controller {
                 $data_update['description'] = $this->input->post('description');
                 $data_update['vission'] = $this->input->post('vission');
                 $data_update['mission'] = $this->input->post('mission');
+                $data_update['title'] = $this->input->post('title');
+                $data_update['visi_title'] = $this->input->post('visi_title');
+                $data_update['misi_title'] = $this->input->post('misi_title');
+
                 $this->about->update(array('id' => $this->input->post('id')), $data_update);
                 redirect('admin/about.html');
             } else {
