@@ -88,6 +88,7 @@ class About_Model extends CI_Model {
 
 	public function get_last() {
 		$this->db->from($this->table);
+		$this->db->where('language',  $this->session->userdata("lang"));
 		$query = $this->db->get();
 		return $query->last_row();
 	}

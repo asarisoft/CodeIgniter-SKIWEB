@@ -22,8 +22,8 @@
 		                            <label class="control-label col-md-2">Page</label>
 		                            <div class="col-md-10">
 		                                 <select name="page" class="form-control" readonly >
-		                                    <option <?php if ($pagecontent->page == "Recycle") echo "selected"; ?> value="Recycle">Recycle</option>
-		                                    <option <?php if ($pagecontent->page == "Bussines") echo "selected"; ?> value="Bussines">Bussines</option>
+		                                    <option <?php if ($pagecontent->page == "recycle") echo "selected"; ?> value="recycle">recycle</option>
+		                                    <option <?php if ($pagecontent->page == "business") echo "selected"; ?> value="business">business</option>
 		                                </select>
 		                                <span class="help-block"></span>
 		                            </div>

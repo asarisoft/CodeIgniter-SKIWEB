@@ -50,8 +50,8 @@
                                 <div class="form-group">
                                     <label class="control-label col-md-2">Visson</label>
                                     <div class="col-md-10">
-                                        <textarea name="visson" id="visson" class="form-control" type="text" rows="6"><?php echo $about->vission ?></textarea>
-                                        <span class="help-block"><?php echo form_error('visson'); ?></span>
+                                        <textarea name="vission" id="vission" class="form-control" type="text" rows="6"><?php echo $about->vission ?></textarea>
+                                        <span class="help-block"><?php echo form_error('vission'); ?></span>
                                     </div>
                                 </div> 
 

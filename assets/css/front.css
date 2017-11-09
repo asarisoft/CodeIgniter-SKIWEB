@@ -345,7 +345,7 @@ li.active > a.nav-link, a:hover.nav-link{
     .about-us-text {
         text-align: center;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 30px;
         padding-top: 20px;
         color: #33D100;
         margin-bottom: 20px;
@@ -353,7 +353,7 @@ li.active > a.nav-link, a:hover.nav-link{
 
     .about-us-text > span {
         color: white; 
-        font-size: 30px;
+        font-size: 48px;
     }
 
 }
@@ -389,7 +389,7 @@ li.active > a.nav-link, a:hover.nav-link{
         position: absolute;
         font-weight: bold;
         left: 100px;
-        font-size: 31px;
+        font-size: 26px;
         color: #33D100;
         line-height: 1;
         padding-top: 18px;
@@ -397,7 +397,7 @@ li.active > a.nav-link, a:hover.nav-link{
 
     .about-us-text > span {
         color: white; 
-        font-size: 36px;
+        font-size: 30px;
     }
 
 }

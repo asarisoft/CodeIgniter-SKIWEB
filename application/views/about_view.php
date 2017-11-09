@@ -1,7 +1,7 @@
 <div class="container container-about1"></div>
 
 <div class="container container-about2">
-	<h3 class="about-us-text"> ABOUT <span >US</span></h3>
+	<h3 class="about-us-text">ABOUT <span>US</span></h3>
 	<img class="ver_green" src="<?php echo base_url('assets/img/ver-green.png')?>">
 	<div class="row container-text container-text-about">
 		<div class="col-md-6 left ct-about" >

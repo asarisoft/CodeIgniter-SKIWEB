@@ -5,20 +5,14 @@ class Home extends Front_end {
 
 	public function __construct() {
 		parent::__construct();
-		$this->load->model('Banner_Model','banner');
-		// $this->load->model('BannerText_Model','bannertext');
-		// $this->load->model('Sell_Model','sell');
-		// $this->load->model('InfoSummary_Model','infosummarry');
-		// $this->load->model('Downloadable_Model','download');
-		// $this->load->database();
-		// deletable 
-		// $this->load->model('Bannerpage_Model','bannerpage');
 	}
 
 	public function index()	{
 		$data['active_menu'] = "index";
 		$data['menu'] = $this->data_menu;
 		$data["footer"] = $this->data_footer;
+
+		$this->load->model('Banner_Model','banner');
 		$data["slide_banner"] = $this->banner->get_published_banner();
 		$this->load->view('header_view', $data);
 		$this->load->view('index_view');
@@ -29,6 +23,9 @@ class Home extends Front_end {
 		$data['active_menu'] = "about";
 		$data['menu'] = $this->data_menu;
 		$data["footer"] = $this->data_footer;
+
+		$this->load->model('About_Model','about');
+		$data["about"] = $this->about->get_last();
 		
 		$this->load->view('header_view', $data);
 		$this->load->view('about_view');
@@ -39,21 +36,38 @@ class Home extends Front_end {
 		$data['active_menu'] = "recycle";
 		$data['menu'] = $this->data_menu;
 		$data["footer"] = $this->data_footer;
-
 		$id = ($this->input->get('id')) ? $this->input->get('id') : '';
+
+		$this->load->model('Pagecontent_Model','pagecontent');
+		$data["datas"] = $this->pagecontent->get_all_filtered('recycle');
+		
 		$this->load->view('header_view', $data);
-		$this->load->view('recycle_view'.$id);
+		if (!$id) {
+			$this->load->view('page_view', $data);
+		} else {
+			$data['active'] = $this->pagecontent->get_by_id_2($id);
+			$this->load->view('page_view_detail', $data);
+		}
 		$this->load->view('footer_view');	
 	}
+
 
 	public function business(){
 		$data['active_menu'] = "business";
 		$data['menu'] = $this->data_menu;
 		$data["footer"] = $this->data_footer;
-
 		$id = ($this->input->get('id')) ? $this->input->get('id') : '';
+
+		$this->load->model('Pagecontent_Model','pagecontent');
+		$data["datas"] = $this->pagecontent->get_all_filtered('business');
+		
 		$this->load->view('header_view', $data);
-		$this->load->view('business_view'.$id);
+		if (!$id) {
+			$this->load->view('page_view', $data);
+		} else {
+		    $data['active'] = $this->pagecontent->get_by_id_2($id);
+			$this->load->view('page_view_detail', $data);
+		}
 		$this->load->view('footer_view');	
 	}
 
