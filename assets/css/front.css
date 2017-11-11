@@ -702,6 +702,11 @@ h4.greenh4 {
     position: relative;
 }
 
+.container-text-general > div.content-left > div > ul {
+    padding-left: 18px;
+    margin-top: -9px;
+}
+
 .in-1 {
     float: left;
 }

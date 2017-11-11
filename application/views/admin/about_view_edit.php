@@ -58,7 +58,7 @@
                                 </div> 
 
 		                    	<div class="form-group">
-                                    <label class="control-label col-md-2">Title Vission</label>
+                                    <label class="control-label col-md-2">Title Vision</label>
                                     <div class="col-md-10">
                                         <input name="visi_title" class="form-control" type="text" 
                                             value="<?php echo $about->visi_title ?>">
@@ -68,7 +68,7 @@
 
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-2">Visson</label>
+                                    <label class="control-label col-md-2">Vision</label>
                                     <div class="col-md-10">
                                         <textarea name="vission" id="vission" class="form-control" type="text" rows="6"><?php echo $about->vission ?></textarea>
                                         <span class="help-block"><?php echo form_error('vission'); ?></span>
