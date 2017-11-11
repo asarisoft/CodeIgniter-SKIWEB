@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Admin Ozindo Property</title>
+    <title>Admin SKI</title>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/img/icon.ico')?>" />
 
     <link rel = "stylesheet" type = "text/css" 
@@ -85,7 +85,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" target="blank" href="<?php echo base_url(); ?>"><b>Ozindo</b> Admin</a>
+                <a class="navbar-brand" target="blank" href="<?php echo base_url(); ?>"><b>SKI</b> Admin</a>
                 <ul class="user-menu">
                     <li class="dropdown pull-right">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> <?php echo $this->session->userdata('name')?> <span class="caret"></span></a>

@@ -1,3 +1,10 @@
+@font-face{
+    font-family: 'Century-Gothic';
+    src: url('../fonts/gothic/gothic.ttf') format('truetype'),
+         url('../fonts/gothic/gothic.woff') format('woff');
+} 
+
+
 /*COlor */
 /*primary #463e43*/
 /*green #33D100*/
@@ -19,6 +26,12 @@ a.lang {
 
 a.lang:hover {
     text-decoration: none;
+}
+
+
+.navbar-toggler {
+    padding: 3px 9px;
+    font-size: 19px;
 }
 
 .bottom-image {
@@ -85,9 +98,12 @@ a.lang:hover {
 
     .navbar {
         float: right;
-        padding: 0px 20px 20px 20px;
+        padding: 0px 20px 10px 20px;
         width: 100vw;
-        margin-top: 10px;
+    }
+
+    a.lang {
+        font-size: 14px;
     }
 }
 
@@ -102,6 +118,10 @@ a.lang:hover {
 
 
 @media (min-width: 768px) {
+    a.lang {
+        font-size: 14px;
+    }
+
     .page-header {
         padding: 25px 45px 10px;
     }
@@ -143,7 +163,7 @@ a.lang:hover {
 
     .page-header > div.search {
         margin: 0 auto;
-        font-size: 15px;
+        text-align: right;
     }   
 
     .page-header > div.search > div { 
@@ -249,6 +269,9 @@ li.active > a.nav-link, a:hover.nav-link{
         height: 380px;
     }
 
+    .img-fluid {
+        min-height: 180px;
+    }
 
     .big-text > h2 {
         font-size: 29px;
@@ -344,9 +367,9 @@ li.active > a.nav-link, a:hover.nav-link{
 
     .ver_green {
         position: absolute;
-        top: -98px;
-        left: 29px;
-        width: 35px;
+        top: -73px;
+        left: 22px;
+        width: 29px;
     }
 
     .about-us-text {
@@ -356,11 +379,12 @@ li.active > a.nav-link, a:hover.nav-link{
         padding-top: 20px;
         color: #33D100;
         margin-bottom: 20px;
+        font-family: 'Century-Gothic';
     }
 
     .about-us-text > span {
-        color: white; 
-        font-size: 48px;
+        color: white;
+        font-size: 32px;
     }
 
 }
@@ -392,19 +416,18 @@ li.active > a.nav-link, a:hover.nav-link{
 
     .about-us-text {
         text-align: left;
-        width: 120px;
-        position: absolute;
         font-weight: bold;
-        left: 100px;
-        font-size: 26px;
+        font-size: 21px;
         color: #33D100;
-        line-height: 1;
         padding-top: 18px;
+        margin: 10px 0;
+        padding-top: 0;
+        margin-top: 0;
     }
 
     .about-us-text > span {
         color: white; 
-        font-size: 30px;
+        font-size: 23px;
     }
 
 }
@@ -414,23 +437,23 @@ li.active > a.nav-link, a:hover.nav-link{
         padding: 16px 30px;
     }
     .container-text {
-        margin-left: 149px;
-        width: 85vw;
+        margin-left: 75px;
+        width: 91vw;
     }
 }
 
 @media (min-width: 1100px) {
     .container-text {
-        width: 85vw;
+        width: 90vw;
     }
 
     .container-text > div {
-        padding: 0px 47px;
+        padding: 10px 23px 0 48px;
     }
 
     .container-text > div.left {
-        padding-right: 10px;
-        padding-left: 80px;
+        padding-right: 25px;
+        padding-left: 40px;
     }
 }
 
@@ -459,8 +482,13 @@ li.active > a.nav-link, a:hover.nav-link{
     font-size: 15px;    
 }
 
+.container-text > div > div > p { 
+    font-family: 'Century-Gothic';
+}
+
 .container-text > div {
     text-align: justify;
+    font-family: 'Century-Gothic';
 }
 
 .container-text > div.left {
@@ -532,6 +560,7 @@ h4.greenh4 {
 .middle-number {
     display: inline-block; 
     float: right;
+    font-family: 'Century-Gothic';
 }
 
 .container-text-recycle > div {
@@ -585,6 +614,7 @@ h4.greenh4 {
     display: inline-block;
     width: 100%;
     color: white;
+    font-family: 'Century-Gothic';
 }
 
 .table-content:hover {
@@ -606,9 +636,9 @@ h4.greenh4 {
     }
 
     .in-1 {
-        width: 84%;
-        padding-right: 10px;
-        padding-left: 5;
+        width: 77%;
+        padding-right: 10px; 
+        padding-left: 16px;
     }
 
     .line-number { 
@@ -622,7 +652,7 @@ h4.greenh4 {
     }
 
     .container-text-general > div.content-right {
-        padding: 20px 6px 16px 2px;
+        padding: 20px 16px 16px 16px;
     }
 
 }
@@ -717,6 +747,7 @@ h4.greenh4 {
         padding: 0 4px;
         width: 88%;
         margin-bottom: 20px;
+        font-family: 'Century-Gothic';
     }
 
     .container-contact-text { 
@@ -737,6 +768,7 @@ h4.greenh4 {
     .contact-right {
         padding-left: 40;
         padding-right: 0;
+        font-family: 'Century-Gothic';
     }
 }
 
@@ -808,6 +840,7 @@ label {
         margin-left: 4px;
         margin-bottom: 5px;
         width: 47%;
+        height: 100px;
     }
 }
 
@@ -828,7 +861,7 @@ label {
     a.fancybox > img {
         margin-left: 4px;
         margin-bottom: 5px;
-        width: auto;
+        height: 100px;
     }
 }
 
@@ -851,6 +884,8 @@ label {
     width: 100%;
     font-weight: bold;
     color: #33D100;
+    padding-left: 3px;
+    font-family: 'Century-Gothic';
 }
 
 .row-gallery {
@@ -873,6 +908,7 @@ label {
 }
 
 .footer {
+    font-family: 'Century-Gothic';
     color: white;
     text-align: center;
     font-size: 12px;

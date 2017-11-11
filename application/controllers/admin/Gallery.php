@@ -125,11 +125,11 @@ class Gallery extends MY_Controller {
                     return FALSE;
                 } else {
                     $upload_data = $this->upload->data();
-                    $this->conf_resize['width'] = 1061;
+                    $this->conf_resize['width'] = 960;
                     $this->conf_resize['source_image'] = $upload_data['full_path'];
                     $this->load->library('image_lib');
                     $this->image_lib->initialize($this->conf_resize);
-                    if ($upload_data && $upload_data['image_width'] > 2000) {
+                    if ($upload_data && $upload_data['image_width'] > 1500) {
                         $this->image_lib->resize();
                     }
                 }

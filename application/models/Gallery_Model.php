@@ -85,4 +85,11 @@ class Gallery_Model extends CI_Model {
 		$this->db->where('id', $id);
 		$this->db->delete($this->table);
 	}
+
+	function get_all() {  
+        $this->db->select('*');
+        $query = $this->db->get($this->table);
+        return $query->result_array();
+    }
+
 }

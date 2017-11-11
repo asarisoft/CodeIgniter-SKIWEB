@@ -22,7 +22,7 @@
 		                        </div>
 
 		                        <div class="form-group">
-		                            <label class="control-label col-md-2">Image (1280 x 500 px)</label>
+		                            <label class="control-label col-md-2">Image (1835 x 656 px)</label>
 		                            <div class="col-md-2">
 		                            	<img src="<?php echo base_url($banner->img_url) ?>" class="img_thumb_edit"></i>
 		                            </div>
