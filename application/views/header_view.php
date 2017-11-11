@@ -7,6 +7,7 @@
         <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('assets/bootstrap-4.0/css/bootstrap.min.css') ?>">
         <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('assets/font-awesome/css/font-awesome.min.css') ?>">
         <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('assets/css/front.css') ?>">
+        <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url('assets/css/animate.css') ?>">
         <!-- Gallery FancyBox -->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/source/jquery.fancybox.css?v=2.1.5')?>" media="screen" />
     </head>
