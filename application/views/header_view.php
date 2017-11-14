@@ -21,7 +21,7 @@
                 </div >
             </div>
             <div class="search pl-0">
-                <b><a class="lang" href="<?php echo base_url('/id/'.substr($_SERVER["REQUEST_URI"], 8)) ?>"> IND </a> | <a class="lang" href="<?php echo base_url('/en/'.substr($_SERVER["REQUEST_URI"], 8)) ?>">ENG </a></b>
+                <b><a class="lang <?php if ($lang=='id') echo 'active' ?>" href="<?php echo base_url('/id/'.substr($_SERVER["REQUEST_URI"], 4)) ?>"> IND </a> | <a class="lang <?php if ($lang=='en') echo 'active' ?>" href="<?php echo base_url('/en/'.substr($_SERVER["REQUEST_URI"], 4)) ?>">ENG </a></b>
             </div>
             <div class="clearfix"></div>
             <nav class="navbar navbar-expand-md">

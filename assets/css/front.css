@@ -26,7 +26,14 @@ a.lang {
 
 a.lang:hover {
     text-decoration: none;
+    color: #33D100 !important;
 }
+
+
+a.lang.active {
+    color: #33D100 !important;
+}
+
 
 
 .navbar-toggler {
@@ -843,11 +850,13 @@ label {
         width: 90vw;
     }
 
-    a.fancybox > img {
-        margin-left: 4px;
-        margin-bottom: 5px;
-        width: 47%;
-        height: 100px;
+    a.gallery {
+        width: 45%;
+        height: 130px;
+    }
+
+    .container-gallery-text {
+        padding: 30px 10px 0 20px;
     }
 }
 
@@ -856,20 +865,24 @@ label {
         width: 80vw;
     }
 
-    a.fancybox > img {
-        margin-left: 4px;
-        margin-bottom: 5px;
-        width: 30%;
+    a.gallery {
+        width: 148px;
+        height: 130px;
     }
 
+    .container-gallery-text {
+        padding: 30px 30px 0;
+    }
 }
 
-@media (min-width: 899px) { 
-    a.fancybox > img {
-        margin-left: 4px;
-        margin-bottom: 5px;
-        height: 100px;
-    }
+
+
+a.gallery {
+    display: block;
+    float: left;
+    margin-right: 11px;
+    margin-bottom: 15px;
+    border: 1px solid white !important; 
 }
 
 .container-gallery {
@@ -883,7 +896,6 @@ label {
     color: white;
     margin: 40px auto 0;
     background: #2d282a;
-    padding: 30px 30px 0;
 }
 
 .p-gallery {
@@ -893,6 +905,7 @@ label {
     color: #33D100;
     padding-left: 3px;
     font-family: 'Century-Gothic';
+    margin-top: 15px;
 }
 
 .row-gallery {
