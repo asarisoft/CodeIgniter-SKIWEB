@@ -1,6 +1,6 @@
 <div class="container container-contact">
 	<div class="row container-contact-text">
-		<h1 style="display: block; display: block; width: 100vw; padding-left: 15px; margin-bottom: 15px;"><b>CONTACT</b></h1>
+		<h1 style="display: block; display: block; width: 100vw; padding-left: 30px; margin-bottom: 15px;     font-size: 35px;"><b>CONTACT</b></h1>
 		<img class="ver_green_contact" src="<?php echo base_url('assets/img/ver-green.png')?>">
 		<div class="col-md-1 col-sm-1 col-xs-1 contact-line">
 			<img style="float:right; padding: 0;" src="<?php echo base_url('assets/img/line-3.png')?>" >

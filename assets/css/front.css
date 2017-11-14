@@ -767,11 +767,12 @@ h4.greenh4 {
     }
 
     .container-contact-text { 
-        width: 70vw;
+        width: 52vw;
     }
 
     .contact-right {
-        padding-left: 40;
+        font-size: 15px !important;
+        padding-left: 35px;
         padding-right: 0;
         font-family: 'Century-Gothic';
     }
@@ -788,23 +789,24 @@ h4.greenh4 {
     color: white;
     margin: 60px auto 0;
     background: #2d282a;
-    padding: 16px 20px 30px 20px;
+    padding: 15px 0px 20px 20px;
 }
 
 .ver_green_contact {
     position: absolute;
-    top: -42px;
-    left: -60px;
+    top: -33px;
+    left: -51px;
+    width: 40px;
 }
 
 .contact-span {
     color: #33D100;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .contact-span2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
 }
 
