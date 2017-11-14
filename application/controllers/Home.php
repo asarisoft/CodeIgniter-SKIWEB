@@ -48,6 +48,13 @@ class Home extends Front_end {
         if (!$number) {
             $this->load->view('page_view', $data);
         } else {
+
+            if ($data['lang'] == 'en') {
+                $data['title_bottom'] = 'RECYCLE';
+            } else {
+                $data['title_bottom'] = 'DAUR ULANG';
+            }
+
             $data['active'] = $this->pagecontent->get_by_number($number);
             $this->load->view('page_view_detail', $data);
         }
@@ -69,6 +76,12 @@ class Home extends Front_end {
         if (!$number) {
             $this->load->view('page_view', $data);
         } else {
+            if ($data['lang'] == 'en') {
+                $data['title_bottom'] = 'BUSINESS';
+            } else {
+                $data['title_bottom'] = 'BISNIS';
+            }
+
             $data['active'] = $this->pagecontent->get_by_number($number);
             $this->load->view('page_view_detail', $data);
         }

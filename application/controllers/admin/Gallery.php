@@ -26,7 +26,8 @@ class Gallery extends MY_Controller {
         foreach ($list as $gallery) {
             $no++;
             $row = array();
-            $row[] = $gallery->title;
+            $row[] = $gallery->title_en;
+            $row[] = $gallery->title_id;
             $row[] = '
                 <a class="btn btn-sm btn-info" href="gallery/image/'.$gallery->id.'" title="Image"><i class="glyphicon glyphicon-picture"></i></a>
                 <a class="btn btn-sm btn-info" href="gallery/edit/'.$gallery->id.'" title="edit"><i class="glyphicon glyphicon-pencil"></i></a>
@@ -50,9 +51,10 @@ class Gallery extends MY_Controller {
 
     function save_data() {  
         $data="";
-        $this->form_validation->set_rules('title', 'title', 'required');  
+        $this->form_validation->set_rules('title_en', 'title', 'required');  
         if($this->form_validation->run() == True) {
-            $data['title'] = $this->input->post('title');
+            $data['title_en'] = $this->input->post('title_en');
+            $data['title_id'] = $this->input->post('title_id');
             $insert = $this->gallery->save($data);
             redirect('admin/gallery.html');
         } else {
@@ -69,9 +71,10 @@ class Gallery extends MY_Controller {
     }
 
     function update() {  
-        $this->form_validation->set_rules('title', 'title', 'required');  
+        $this->form_validation->set_rules('title_en', 'title', 'required');  
         if($this->form_validation->run() != false){
-            $data_update['title'] = $this->input->post('title');
+            $data_update['title_en'] = $this->input->post('title_en');
+            $data_update['title_id'] = $this->input->post('title_id');
             $this->gallery->update(array('id' => $this->input->post('id')), $data_update);
             redirect('admin/gallery.html');
         } else {

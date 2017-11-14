@@ -8,11 +8,20 @@
 
                             <div class="form-body">
                                 <div class="form-group">
-                                    <label class="control-label col-md-2">Title</label>
+                                    <label class="control-label col-md-2">English Title</label>
                                     <div class="col-md-10">
-                                        <input name="title" class="form-control" type="text" 
+                                        <input name="title_en" class="form-control" type="text" 
                                             value="">
-                                        <span class="help-block"><?php echo form_error('title'); ?></span>
+                                        <span class="help-block"><?php echo form_error('title_en'); ?></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-2">Indonesia Title</label>
+                                    <div class="col-md-10">
+                                        <input name="title_id" class="form-control" type="text" 
+                                            value="">
+                                        <span class="help-block"><?php echo form_error('title_id'); ?></span>
                                     </div>
                                 </div>
 

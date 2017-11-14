@@ -7,7 +7,7 @@
  			
  		
 		<div class="col-md-6 col-sm-12">
-			<p class="p-gallery"><?php echo $value['title'] ?></p>
+			<p class="p-gallery"><?php echo $value['title'.'_'.$lang] ?></p>
 			<p>
 			<?php foreach ($value['photos'] as $pkey => $img_url) { ?>
 			<a class="fancybox" href="<?php echo base_url('assets/img/gallery/'.$value['id'].'/'.$img_url)?>" data-fancybox-group="gallery1" title=""><img src="<?php echo base_url('assets/img/gallery/'.$value['id'].'/'.$img_url)?>" alt="" /></a>

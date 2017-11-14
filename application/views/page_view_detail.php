@@ -7,7 +7,7 @@
 	<div class="row container-text container-text-general">
 		<div class="col-md-7 content-left" >
 			<div class="col-md-11 col-sm-10 col-xs-10 in-1">
-			<h4 class="title-bottom"> RECYCLE </h4>
+			<h4 class="title-bottom"> <?php echo $title_bottom  ?> </h4>
 			<h5 class="title-content"><?php echo $active->title ?></h5>
 			<?php echo $active->description ?>
 			</div>

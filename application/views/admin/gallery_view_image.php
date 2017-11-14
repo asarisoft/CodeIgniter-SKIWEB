@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="panel panel-default">
-				<h4 class="title_page"><?php echo $gallery->title ?></h4>
+				<h4 class="title_page"><?php echo $gallery->title_en ?></h4>
 				<div class="panel-body">
 					<p> Please crop image to (1060 x 50px) before upload</p>
 		            <form action="<?php echo site_url("admin/gallery/upload") ?>" id="form-upload"> 

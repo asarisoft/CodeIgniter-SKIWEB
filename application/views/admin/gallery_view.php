@@ -11,7 +11,8 @@
 					<table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">
 			            <thead>
 			                <tr>
-			                    <th>Title</th>
+			                    <th>Title en</th>
+			                    <th>Title id</th>
 			                    <th style="width:120px;">Action</th>
 			                </tr>
 			            </thead>
