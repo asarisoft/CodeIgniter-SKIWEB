@@ -588,8 +588,8 @@ h4.greenh4 {
     color: white;
 }
 
-.list li > a:after {
-    content:"..........................................................................................";
+.list li > a:before {
+    content:"...........................................................................................................";
     position:absolute;
     bottom:0px;
     z-index:-1;
@@ -597,20 +597,25 @@ h4.greenh4 {
     padding-right: 10px;
 }
 
-.list li:hover > a:after {
+.list li > a.detail:before {
+      content:".....................................................................................";
+}
+
+.list li:hover > a:before {
     color: #33D100 !important;
 }
 
-.list li span {
+.list li span.span1 {
     display:inline;
-    background-color:#463e43;
+    background-color:#463e43 !important;
 }
 
 .list li .number {
     float:right;
     font-weight:bold;
-    background-color:#463e43;
+    background-color: none !important;
     padding-left: 10px;
+    display:inline;
 }
 
 .container-recycle {

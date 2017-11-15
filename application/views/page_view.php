@@ -6,7 +6,7 @@
 		<div class="col-md-6 rec-left" >
 		    <ul class="list">	
 		    	<?php foreach ($datas as $key => $value) { if ($key < 2) {?>
-			    <li class="detail1"><a class="table-content" href="<?php echo base_url($lang.'/home/'.$value->page.'?number='.$value->number)?>"><span style="padding-right: 10px"><?php echo $value->title ?></span><span class="number"><?php echo $value->number ?></span></a></li>
+			    <li class="detail1"><a class="table-content" href="<?php echo base_url($lang.'/home/'.$value->page.'?number='.$value->number)?>"><span class="span1" style="padding-right: 10px"><?php echo $value->title ?></span><span class="number"><?php echo $value->number ?></span></a></li>
      			<?php } } ?>
 		    </ul> 
 	    </div>
@@ -14,7 +14,7 @@
 		<div class="col-md-6 rec-right">
 			 <ul class="list">
 			 <?php foreach ($datas as $key => $value) { if ($key > 1) {?>
-			    <li class="detail1"><a class="table-content" href="<?php echo base_url($lang.'/home/'.$value->page.'?number='.$value->number)?>"><span style="padding-right: 10px"><?php echo $value->title ?></span><span class="number"><?php echo $value->number ?></span></a></li>
+			    <li class="detail1"><a class="table-content" href="<?php echo base_url($lang.'/home/'.$value->page.'?number='.$value->number)?>"><span class="span1" style="padding-right: 10px"><?php echo $value->title ?></span><span class="number"><?php echo $value->number ?></span></a></li>
      			<?php } } ?>
 		    </ul> 
 		</div>
