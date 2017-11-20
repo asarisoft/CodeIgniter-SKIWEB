@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 require('helper.php');
 
 class Home extends Front_end {
-    public function __construct() {
+    public function __construct(){
         parent::__construct();
     }
 
@@ -43,18 +43,19 @@ class Home extends Front_end {
 
         $this->load->model('Pagecontent_Model','pagecontent');
         $data["datas"] = $this->pagecontent->get_all_filtered('recycle');
+
+        $this->load->model('Bannerpage_Model','banner_page');
+        $data["banner"] = $this->banner_page->get_by_page('recycle');
         
         $this->load->view('header_view', $data);
         if (!$number) {
             $this->load->view('page_view', $data);
         } else {
-
             if ($data['lang'] == 'en') {
                 $data['title_bottom'] = 'RECYCLE';
             } else {
                 $data['title_bottom'] = 'DAUR ULANG';
             }
-
             $data['active'] = $this->pagecontent->get_by_number($number);
             $this->load->view('page_view_detail', $data);
         }
@@ -71,6 +72,9 @@ class Home extends Front_end {
 
         $this->load->model('Pagecontent_Model','pagecontent');
         $data["datas"] = $this->pagecontent->get_all_filtered('business');
+
+        $this->load->model('Bannerpage_Model','banner_page');
+        $data["banner"] = $this->banner_page->get_by_page('business');
         
         $this->load->view('header_view', $data);
         if (!$number) {
@@ -106,7 +110,7 @@ class Home extends Front_end {
         $this->load->view('footer_view');   
     }
 
-    public function contact()   {
+    public function contact(){
         $data['active_menu'] = "contact";
         $data['menu'] = $this->data_menu;
         $data["footer"] = $this->data_footer;
@@ -135,3 +139,5 @@ class Home extends Front_end {
     }
 }
 
+
+?>

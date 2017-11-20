@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Pagecontent_Model extends CI_Model {
     var $table = 'page_content';
-    var $column_order = array('page'); 
+    var $column_order = array('page', 'title'); 
     var $column_search = array('page','title'); 
     var $order = array('number' => 'asc'); 
 

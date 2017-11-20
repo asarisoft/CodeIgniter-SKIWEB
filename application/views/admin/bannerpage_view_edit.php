@@ -14,9 +14,8 @@
 		                            <label class="control-label col-md-2">Page</label>
 		                            <div class="col-md-10">
 		                                 <select name="page" class="form-control" readonly >
-		                                    <option <?php if ($bannerpage->page == "About") echo "selected"; ?> value="About">About</option>
 		                                    <option <?php if ($bannerpage->page == "Recycle") echo "selected"; ?> value="Recycle">Recycle</option>
-		                                    <option <?php if ($bannerpage->page == "Bussines") echo "selected"; ?> value="Bussines">Bussines</option>
+		                                    <option <?php if ($bannerpage->page == "Business") echo "selected"; ?> value="Business">Business</option>
 		                                </select>
 		                                <span class="help-block"></span>
 		                            </div>

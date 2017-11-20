@@ -1,7 +1,5 @@
 <?php
-
 (defined('BASEPATH')) OR exit('No direct script access allowed');
-
 
 class MY_Controller extends CI_Controller {
     public $config_upload;
@@ -65,12 +63,11 @@ Class Front_end extends CI_Controller {
     public $data_menu = [];
     public $data_footer = [];
 
-    function __construct() {
+    function __construct(){
         parent::__construct();
         $this->load_lang();
         $this->load->model('Menu_Model','menu');
         $this->data_menu = $this->menu->get_all();
-
         $this->load->model('Footer_Model','footer');
         $this->data_footer = $this->footer->get_last();
     }
@@ -91,3 +88,5 @@ Class Front_end extends CI_Controller {
         }
     }   
 }
+
+?>

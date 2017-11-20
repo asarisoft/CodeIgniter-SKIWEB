@@ -1,4 +1,4 @@
-<div class="container container-about1"></div>
+<div class="container container-about1" style="background: url('<?php echo base_url($about->img_url)?>') !important"></div>
 
 <div class="container container-about2">
 	<img class="ver_green" src="<?php echo base_url('assets/img/ver-green.png')?>">
