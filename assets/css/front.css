@@ -313,6 +313,11 @@ li.active > a.nav-link, a:hover.nav-link{
         background: url('../img/home1.jpg');
         height: 524px;
     }
+
+    .img-fluid {
+        min-width: 100% !important;
+    }
+
 }
 
 .container-home {

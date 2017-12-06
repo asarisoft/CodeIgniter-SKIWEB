@@ -1,4 +1,7 @@
-<div class="container container-about1" style="background: url('<?php echo base_url($banner->img_url)?>') !important; z-index: -2"></div>
+<!-- <div class="container container-about1" style="background: url('<?php echo base_url($banner->img_url)?>') !important; z-index: -2; background-size: cover !important; background-repeat: no-repeat !important;"></div> -->
+<div class="container container-about1" style="background: url('<?php echo base_url($banner->img_url)?>') !important; background-size: cover !important; background-repeat: no-repeat !important;">
+
+</div>
 
 
 <div class="container container-about2 container-recycle">
