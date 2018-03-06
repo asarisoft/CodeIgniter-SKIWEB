@@ -784,14 +784,26 @@ h4.greenh4 {
     }
 
     .container-contact-text { 
-        width: 52vw;
+        width: 40vw;
     }
 
     .contact-right {
         font-size: 15px !important;
-        padding-left: 35px;
+        padding-left: 15px;
         padding-right: 0;
         font-family: 'Century-Gothic';
+    }
+
+    .contact-right > form > p {
+        margin-bottom: 5px;
+    }
+
+    .contact-left > p {
+        margin-bottom: 5px;
+    }
+
+    .contact-right > form > p > label {
+        font-size: 13px;
     }
 }
 
@@ -804,27 +816,25 @@ h4.greenh4 {
 .container-contact-text {
     position: relative;
     color: white;
-    margin: 60px auto 0;
+    margin: 35px auto 50px;
     background: #2d282a;
-    padding: 15px 0px 20px 20px;
+    padding: 15px 0 15px 20px;
 }
 
 .ver_green_contact {
     position: absolute;
-    top: -33px;
-    left: -51px;
-    width: 40px;
+    top: -20px;
+    left: -43px;
+    width: 31px;
 }
 
 .contact-span {
     color: #33D100;
-    font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .contact-span2 {
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 13px;
 }
 
 .input-contact {
@@ -846,10 +856,13 @@ label {
 }
 
 .button-send {
-    padding: 5px 16px; 
-    background-color: #33D100; 
-    border: none; 
-    color: white
+    padding: 4px 14px;
+    background-color: #33D100;
+    border: none;
+    color: white;
+    margin-top: 7px;
+    margin-right: 0;
+    float: right;
 }
 
 

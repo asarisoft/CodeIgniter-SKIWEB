@@ -100,11 +100,9 @@ class Home extends Front_end {
 
         $this->load->model('Gallery_Model','gallery');
         $data["gallery"] = $this->gallery->get_all();
-
         foreach ($data["gallery"] as $key => $value) {
             $data['gallery'][$key]['photos'] = get_filenames("./assets/img/gallery/".$value['id'], FALSE);
         }
-
         $this->load->view('header_view', $data);
         $this->load->view('gallery_view');
         $this->load->view('footer_view');   

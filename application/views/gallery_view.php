@@ -6,11 +6,19 @@
         <div class="col-md-6 col-sm-12">
             <p class="p-gallery"><?php echo $value['title'.'_'.$lang] ?></p>
             <p>
-            <?php foreach ($value['photos'] as $pkey => $img_url) { ?>
-            <a class="fancybox gallery" href="<?php echo base_url('assets/img/gallery/'.$value['id'].'/'.$img_url)?>" data-fancybox-group="gallery1" title="" style="
-                 background: url('<?php echo base_url('assets/img/gallery/'.$value['id'].'/'.$img_url)?>')
-                 no-repeat !important; background-position: center !important;  background-size: contain !important"></a>
-            <?php } ?>
+            <?php foreach ($value['photos'] as $pkey => $img_url) { 
+                if (pathinfo($img_url)['extension'] == "mp4") {?> 
+                    <a class="fancybox gallery video" href="<?php echo base_url('assets/img/gallery/'.$value['id'].'/'.$img_url)?>" data-fancybox-group="gallery1" title="" style="
+                    background: url('<?php echo base_url('assets/img/gallery/thumb/'.$img_url)?>') 
+                    no-repeat !important; background-position: center !important;  background-size: contain !important"></a>    
+                <?php
+                    } else { 
+                ?>
+                    <a class="fancybox gallery" href="<?php echo base_url('assets/img/gallery/'.$value['id'].'/'.$img_url)?>" data-fancybox-group="gallery1" title="" style="
+                    background: url('<?php echo base_url('assets/img/gallery/'.$value['id'].'/'.$img_url)?>')
+                    no-repeat !important; background-position: center !important;  background-size: contain !important"></a>
+                <?php } 
+            }?>
             </p>
         </div>
         <?php } ?> 

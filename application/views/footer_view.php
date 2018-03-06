@@ -18,6 +18,14 @@
 
 			$('.fancybox').fancybox();
 		});
+
+		$(function () {
+            $('.video').fancybox({
+                width: 640,
+                height: 400,
+                type: 'iframe'
+            });
+        });
 	</script>
 
 </body>

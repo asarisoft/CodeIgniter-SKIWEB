@@ -102,13 +102,13 @@ class Gallery extends MY_Controller {
 
     public function upload(){
         $gallery_id = $this->input->post('id');
+        mkdir('./assets/img/gallery/thumb', 0777, TRUE);
         if (!is_dir('./assets/img/gallery/' . $gallery_id)) {
             mkdir('./assets/img/gallery/' . $gallery_id, 0777, TRUE);
         }
-
-        if ( ! empty($_FILES)) {   
+        if ( !empty($_FILES)) {   
             $config['upload_path'] = "./assets/img/gallery/".$gallery_id."/";
-            $config['allowed_types'] = 'gif|jpg|png|jpeg|';
+            $config['allowed_types'] = 'gif|jpg|png|jpeg|mp4';
             $config['file_name'] = md5(date("Y-m-d H:i:s"));
             $config['maintain_ratio'] = TRUE;
             $this->load->library('upload');
@@ -128,12 +128,20 @@ class Gallery extends MY_Controller {
                     return FALSE;
                 } else {
                     $upload_data = $this->upload->data();
-                    $this->conf_resize['width'] = 960;
-                    $this->conf_resize['source_image'] = $upload_data['full_path'];
-                    $this->load->library('image_lib');
-                    $this->image_lib->initialize($this->conf_resize);
-                    if ($upload_data && $upload_data['image_width'] > 1500) {
-                        $this->image_lib->resize();
+                    print_r($upload_data);
+                    if ($upload_data['file_ext'] == ".mp4") {
+                        $video = $upload_data['full_path'];
+                        $thumb = './assets/img/gallery/thumb/'.$upload_data['orig_name'];
+                        exec("ffmpeg -i ".$video." -deinterlace -an -ss 3 -f mjpeg -t 1 -r 1 ".$thumb);
+                    } else {
+                        print_r($upload_data);
+                        $this->conf_resize['width'] = 960;
+                        $this->conf_resize['source_image'] = $upload_data['full_path'];
+                        $this->load->library('image_lib');
+                        $this->image_lib->initialize($this->conf_resize);
+                        if ($upload_data && $upload_data['image_width'] > 1500) {
+                            $this->image_lib->resize();
+                        }
                     }
                 }
             }
